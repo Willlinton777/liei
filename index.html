@@ -412,6 +412,28 @@
 			color: #ffffff;
 		}
 
+		.course-card[class*="prereq-group"].status-por-ver,
+		.course-card[class*="prereq-group"].status-aprobado,
+		.course-card[class*="prereq-group"].status-matriculado,
+		.course-card[class*="prereq-group"].status-proyeccion {
+			border-left-color: var(--prereq-color, #6e3256);
+		}
+
+		.course-card[class*="prereq-group"] {
+			padding-left: 18px;
+			border-left-width: 6px;
+			border-left-style: solid;
+			border-left-color: var(--prereq-color, #6e3256);
+		}
+
+		.course-card.prereq-group-1 { --prereq-color: #8d3daf; }
+		.course-card.prereq-group-2 { --prereq-color: #e67e22; }
+		.course-card.prereq-group-3 { --prereq-color: #2e86c1; }
+		.course-card.prereq-group-4 { --prereq-color: #27ae60; }
+		.course-card.prereq-group-5 { --prereq-color: #b9770e; }
+		.course-card.prereq-group-6 { --prereq-color: #c0392b; }
+		.course-card.prereq-group-7 { --prereq-color: #16a085; }
+
 		.course-card[data-elective="true"] {
 			border-left: 6px solid #6e3256;
 			padding-left: 18px;
@@ -621,7 +643,7 @@
 		<div class="stats-panel">
 			<div class="stats-grid">
 				<div class="stat-card">
-					<div class="stat-number" id="totalCourses">55</div>
+					<div class="stat-number" id="totalCourses">0</div>
 					<div class="stat-label">Total de Cursos</div>
 				</div>
 				<div class="stat-card">
@@ -633,11 +655,11 @@
 					<div class="stat-label">Cursos Matriculados</div>
 				</div>
 				<div class="stat-card">
-					<div class="stat-number" id="pendingCourses">53</div>
+					<div class="stat-number" id="pendingCourses">0</div>
 					<div class="stat-label">Por Matricular</div>
 				</div>
 				<div class="stat-card">
-					<div class="stat-number" id="totalCredits">156</div>
+					<div class="stat-number" id="totalCredits">0</div>
 					<div class="stat-label">Total Cr&eacute;ditos</div>
 				</div>
 				<div class="stat-card">
@@ -671,7 +693,7 @@
 						<div class="period-title">Periodo 1</div>
 						<div class="period-credits">Cr&eacute;ditos: 18</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-1">
 						<div class="course-name">Introducci&oacute;n a la Licenciatura en Educaci&oacute;n Infantil</div>
 						<div class="course-code">C&oacute;digo: 502707680</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -708,17 +730,17 @@
 						<div class="period-title">Periodo 2</div>
 						<div class="period-credits">Cr&eacute;ditos: 19</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-1">
 						<div class="course-name">Infancia: historias y perspectivas</div>
 						<div class="course-code">C&oacute;digo: 514517</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-2">
 						<div class="course-name">Epistemolog&iacute;a e historia de la pedagog&iacute;a</div>
 						<div class="course-code">C&oacute;digo: 520027</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-3">
 						<div class="course-name">Fundamentos y generalidades de investigaci&oacute;n</div>
 						<div class="course-code">C&oacute;digo: 150001</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -745,12 +767,12 @@
 						<div class="period-title">Periodo 3</div>
 						<div class="period-credits">Cr&eacute;ditos: 18</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-1">
 						<div class="course-name">Pol&iacute;ticas y programas de atenci&oacute;n integral a la infancia</div>
 						<div class="course-code">C&oacute;digo: 514502</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-2">
 						<div class="course-name">Did&aacute;ctica</div>
 						<div class="course-code">C&oacute;digo: 517020</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -760,7 +782,7 @@
 						<div class="course-code">C&oacute;digo: 517021</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-4">
 						<div class="course-name">Educaci&oacute;n para la transformaci&oacute;n social</div>
 						<div class="course-code">C&oacute;digo: 517027</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -787,17 +809,17 @@
 						<div class="course-code">C&oacute;digo: 514505</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-2">
 						<div class="course-name">Pedagog&iacute;a y did&aacute;cticas para la inclusi&oacute;n</div>
 						<div class="course-code">C&oacute;digo: 514017</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-3">
 						<div class="course-name">Investigaci&oacute;n educativa y pedag&oacute;gica</div>
 						<div class="course-code">C&oacute;digo: 517023</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-4">
 						<div class="course-name">Educaci&oacute;n, familia y comunidad</div>
 						<div class="course-code">C&oacute;digo: 514506</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -807,7 +829,7 @@
 						<div class="course-code">C&oacute;digo: 520026</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-7">
 						<div class="course-name">Ingl&eacute;s A1</div>
 						<div class="course-code">C&oacute;digo: 900001</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -824,17 +846,17 @@
 						<div class="course-code">C&oacute;digo: 514515</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-2">
 						<div class="course-name">Exploraci&oacute;n del medio en la infancia</div>
 						<div class="course-code">C&oacute;digo: 502707682</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-3">
 						<div class="course-name">Investigaci&oacute;n en educaci&oacute;n infantil</div>
 						<div class="course-code">C&oacute;digo: 514507</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-6">
 						<div class="course-name">Maestros, infancias y contextos</div>
 						<div class="course-code">C&oacute;digo: 502707683</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -844,7 +866,7 @@
 						<div class="course-code">C&oacute;digo: 517028</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-7">
 						<div class="course-name">Ingl&eacute;s A2</div>
 						<div class="course-code">C&oacute;digo: 900002</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -871,7 +893,7 @@
 						<div class="course-code">C&oacute;digo: 517018</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-6">
 						<div class="course-name">Maestro innovador reflexivo</div>
 						<div class="course-code">C&oacute;digo: 502707684</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -881,7 +903,7 @@
 						<div class="course-code">C&oacute;digo: por asignar</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-7">
 						<div class="course-name">Ingl&eacute;s B1</div>
 						<div class="course-code">C&oacute;digo: 900003</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -903,12 +925,12 @@
 						<div class="course-code">C&oacute;digo: 514005</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-5">
 						<div class="course-name">Administraci&oacute;n y gesti&oacute;n educativa</div>
 						<div class="course-code">C&oacute;digo: 500001</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-6">
 						<div class="course-name">Maestro investigador reflexivo</div>
 						<div class="course-code">C&oacute;digo: 502707685</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -918,7 +940,7 @@
 						<div class="course-code">C&oacute;digo: por asignar</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-7">
 						<div class="course-name">Ingl&eacute;s B2</div>
 						<div class="course-code">C&oacute;digo: 900005</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -940,12 +962,12 @@
 						<div class="course-code">C&oacute;digo: 514508</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-5">
 						<div class="course-name">Gesti&oacute;n de proyectos y organizaciones educativas</div>
 						<div class="course-code">C&oacute;digo: 514512</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-6">
 						<div class="course-name">Maestro investigador transformativo</div>
 						<div class="course-code">C&oacute;digo: 502707686</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -987,7 +1009,7 @@
 						<div class="course-code">C&oacute;digo: por asignar</div>
 						<div class="course-credit">1 cr&eacute;dito</div>
 					</div>
-					<div class="course-card">
+					<div class="course-card prereq-group-6">
 						<div class="course-name">C&aacute;tedra de infancias</div>
 						<div class="course-code">C&oacute;digo: 502707687</div>
 						<div class="course-credit">3 cr&eacute;ditos</div>
@@ -1064,6 +1086,7 @@
 			const legendAprobado = document.getElementById('legendAprobado');
 			const legendProyeccion = document.getElementById('legendProyeccion');
 			const totalElem = document.getElementById('totalCourses');
+			const totalCreditsElem = document.getElementById('totalCredits');
 			const approvedCreditsElem = document.getElementById('approvedCredits');
 			const profileInput = document.getElementById('profileName');
 			const snapshotButton = document.getElementById('downloadSnapshot');
@@ -1074,10 +1097,6 @@
 				'proyeccion': { label: 'Proyección' }
 			};
 			let activeCard = null;
-
-			if (totalElem) {
-				totalElem.textContent = String(cards.length);
-			}
 
 			function getElectivePrefix(card) {
 				if (!card || card.dataset.elective !== 'true') {
@@ -1112,6 +1131,13 @@
 			}
 
 			function getCourseCredits(card) {
+				const override = card.dataset.creditValue;
+				if (override !== undefined) {
+					const parsedOverride = Number(override);
+					if (!Number.isNaN(parsedOverride)) {
+						return parsedOverride;
+					}
+				}
 				const creditText = card.querySelector('.course-credit')?.textContent || '';
 				const match = creditText.match(/(\d+)\s*cr[eé]ditos?/i);
 				return match ? Number(match[1]) : 0;
@@ -1169,6 +1195,7 @@
 					const credits = getCourseCredits(card);
 					acc.totalCourses += 1;
 					acc.progress.total += 1;
+					acc.credits.total += credits;
 					switch (status) {
 						case 'aprobado':
 							acc.status.aprobado += 1;
@@ -1189,18 +1216,19 @@
 					totalCourses: 0,
 					status: { aprobado: 0, matriculado: 0, porVer: 0, proyeccion: 0 },
 					progress: { total: 0, aprobado: 0 },
-					credits: { aprobado: 0 }
+					credits: { aprobado: 0, total: 0 }
 				});
 				const pendienteTotal = totals.status.porVer + totals.status.proyeccion;
-				if (totalElem) totalElem.textContent = totals.totalCourses;
-				completedElem.textContent = totals.status.aprobado;
-				enrolledElem.textContent = totals.status.matriculado;
-				pendingElem.textContent = pendienteTotal;
-				if (legendAprobado) legendAprobado.textContent = totals.status.aprobado;
-				if (legendMatriculado) legendMatriculado.textContent = totals.status.matriculado;
-				if (legendPorVer) legendPorVer.textContent = totals.status.porVer;
-				if (legendProyeccion) legendProyeccion.textContent = totals.status.proyeccion;
-				if (approvedCreditsElem) approvedCreditsElem.textContent = totals.credits.aprobado;
+				if (totalElem) totalElem.textContent = String(totals.totalCourses);
+				completedElem.textContent = String(totals.status.aprobado);
+				enrolledElem.textContent = String(totals.status.matriculado);
+				pendingElem.textContent = String(pendienteTotal);
+				if (legendAprobado) legendAprobado.textContent = String(totals.status.aprobado);
+				if (legendMatriculado) legendMatriculado.textContent = String(totals.status.matriculado);
+				if (legendPorVer) legendPorVer.textContent = String(totals.status.porVer);
+				if (legendProyeccion) legendProyeccion.textContent = String(totals.status.proyeccion);
+				if (totalCreditsElem) totalCreditsElem.textContent = String(totals.credits.total);
+				if (approvedCreditsElem) approvedCreditsElem.textContent = String(totals.credits.aprobado);
 				const progressValue = totals.progress.total ? Math.round((totals.progress.aprobado / totals.progress.total) * 100) : 0;
 				progressPercent.textContent = `${progressValue}%`;
 				progressFill.style.width = `${progressValue}%`;
